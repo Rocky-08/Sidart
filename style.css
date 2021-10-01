@@ -1,0 +1,744 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/*---------------------------------- Navbar -------------------------------------*/
+
+.logo{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.logo img{
+    width : 6rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+.navbar{
+   margin: 6rem 0rem 0 0rem;
+   display:flex;
+   flex-direction:row;
+   
+
+}
+
+.nav-logo{
+    font-size: 1.2rem;
+    width: 45vw;
+    margin-top: 1rem;
+    word-spacing: 0rem;
+    font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+    
+    
+}
+
+.nav-list{
+    width: 55vw;
+    font-family: 'Montserrat', sans-serif;
+    display:flex;
+    flex-direction:row;
+    justify-items:center;
+    align-items:center;
+}
+
+
+    
+
+
+.nav-list a{
+    color: black;
+    text-decoration:none;
+}
+
+.nav-item{
+    text-decoration:none;
+    list-style: none;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+
+
+.nav-item:hover{
+
+  border-bottom: 3px solid orange;
+  perspective: 1000px;
+    
+}
+
+
+/*----------------------------------- Works -----------------------------------*/
+
+
+.works{
+
+    /* width: 100%; */
+    height: 100%;
+    margin-top: 3rem;
+    
+}
+.show-work{
+   margin-top: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.painting-desc{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    
+}
+
+.painting-name{
+   
+    font-family: 'Montserrat', sans-serif;
+    margin: 2rem;
+    margin-top:5rem;
+
+}
+
+.painting-date{
+
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 2rem;
+    font-size: 1rem;
+
+    
+
+}
+
+.painting-size{
+    margin: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1rem;
+
+}
+
+.painting-type{
+    
+    font-size:1rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 2rem;
+}
+    
+
+    
+    
+
+.show-work img{
+    padding: 3rem;
+    width: 60%;
+    height: 50rem;
+}
+
+.bigwork{
+    display: flex;
+    flex-direction: column;
+}
+
+.move-box{
+    
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 54rem;
+
+}
+    
+
+    
+
+.moveback-btn{
+
+   font-size: 0.9rem;
+   border: none;
+   background-color:white;
+   cursor: pointer;
+   
+}
+
+.next{
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    
+    
+}
+
+.prev-btn,.next-btn{
+    font-size: 1rem;
+    border: none;
+    background-color:white;
+    cursor: pointer;
+}
+
+.worksbox{
+
+    /* margin-top: 1rem; */
+    /* width: 100%; */
+    height: 100%;
+    padding: 1.5rem;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(13,26rem); ;
+    grid-gap: 2rem;
+}
+
+
+
+.work img{
+
+    width: 100%;
+    height: 85%;
+    cursor: pointer;
+}
+
+.work-name{
+    margin-top: 1rem;
+    text-align: center;
+    font-size:1.3rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+    
+
+.active{
+    display:none;
+}
+
+/* ---------------------------------------------- Prints ---------------------------------------------------- */
+
+.prints{
+
+    height: 100%;
+    margin-top: 3rem;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.main-text { 
+    width: 100%;
+    height : 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.main-text h2{
+
+    width: 100%;
+    text-align: center;
+}
+
+.main-text p{
+
+    
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top:3rem;
+    line-height:1.7rem;
+    font-size:1.1rem;
+}
+
+.sellPics{
+
+    height:100%;
+}
+       
+
+.grid-Container{
+
+    display:grid;
+    
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(10,20rem);
+    grid-gap: 5rem;
+    padding: 2rem;
+    height: 100%;
+
+}
+
+.sellpic{
+    cursor: pointer;
+}
+
+    
+
+.imgsell{
+    width: 100%;
+    height:100%;
+}
+
+.sellbox{
+    
+    height: 100%;
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+
+
+}
+
+.sellDetails{
+    display: flex;
+    flex-direction:row;
+    padding: 2rem;
+
+}
+    
+
+   
+
+
+
+
+.sellImage img{
+    padding: 1rem;
+    width: 1fr;
+    height: 35rem;
+    
+}
+
+.sellterms{
+    width: 1fr;
+    padding: 2rem;
+}
+
+.sell-name{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.sell-price{
+
+    font-size:2rem;
+    text-align: start;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+
+}
+
+.sell-desc{
+
+    font-size:1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.btn-purchase{
+    
+    margin-top: 3rem;
+    width: 10rem;
+    height: 4rem;
+    font-size:1rem;
+    background-color:black;
+    color:white;
+    padding:1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.backprint{
+    border: none;
+    background-color: white;
+    margin: 3rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.backprint:hover{
+    color: red;
+    font-weight: bold;
+}
+
+.picdetails{
+    width: 100%;
+
+}
+
+.pic-name{
+    text-align: center;
+    font-size:1.3rem;
+    text-transform: uppercase;
+
+}
+
+.pic-price{
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+/*--------------------- About ------------------------------------------*/
+
+.about{
+
+    width: 100%;
+    height: 100%;
+    font-family: 'Heebo', sans-serif;
+    margin-top: 3rem;
+
+    
+
+}
+
+.about-flex{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.about-pic{
+
+    width: 100%;
+    height: 100%;
+    margin: 3rem;
+}
+
+.about-pic img{
+    width: 100%;
+    height: 50%;
+}
+
+.about-desc{
+
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+
+}
+
+.about-desc p{
+
+    font-size: 1.2rem;
+    line-height:2rem;
+    padding: 3rem;
+    
+   
+}
+
+.about-main{
+    width: 100%;
+    height: 100%;
+}
+
+/*---------------------------------------- Footer ----------------------------------------------------*/
+
+.social-footer{
+
+    width: 100%;
+    height: 100%;
+    margin-top: 4rem;
+
+}
+
+.social-icons{
+    width: 100%;
+    height: 5rem; 
+    /* display: flex;
+    flex-direction: row; */
+   
+}
+
+.social-icons a{
+    color: black;
+}
+    
+    
+
+.social-icons i{
+    font-size:2rem;
+    margin: 4rem 1rem 5rem 2rem;
+    float:right;
+}
+
+.bi-instagram{
+
+    padding-right: 5rem;
+}
+
+.bi-instagram:hover{
+    color: #cd486b;
+}
+
+.bi-facebook:hover{
+    color: 	#4267B2;
+
+}
+
+.active-menu{
+    display: none;
+}
+
+
+@media screen and (max-width:1113px) {
+    .move-box{
+        grid-gap: 40rem;
+    }
+
+    .sellImage img{
+        height: 30rem;
+     
+        
+    }
+}
+
+
+
+
+@media screen and (max-width:903px) {
+    .navbar{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .nav-logo{
+        width: 100vw;
+        text-align: center;
+
+    }
+
+
+
+    .nav-list{
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        
+    }
+
+    .nav-item{
+        margin: 1rem 0;
+    }
+
+    .show-work{
+        flex-direction: column-reverse;
+        width: 100%;
+       
+        
+    }
+
+    .show-work img{
+        width: 80%;
+        padding: 2rem;
+    }
+       
+    .move-box{
+        grid-gap: 30rem;
+    }
+
+    .sellImage img{
+        width: 1fr;
+        height: 25rem;
+        
+    }
+
+    .deactive{
+        display:none;
+        
+        width: 30rem;
+        
+    }
+
+    .menu{
+        text-align: center;
+        margin-top: 2rem;
+        font-size:2rem;
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+    }
+
+    .active-menu {
+        display: block;
+    }
+        
+}
+
+@media screen and (max-width:751px) {
+    .worksbox{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(13,20rem);
+    }
+
+    .grid-Container{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(13,38rem);
+        padding : 4rem;
+    }
+
+    .show-work img{
+       height: 80%;
+
+        padding: 2rem;
+    }
+
+    .move-box{
+        grid-gap: 20rem;
+    }
+
+    .sellDetails{
+        flex-direction: column;
+
+
+  
+    }
+
+    .sellImage {
+        width: 100%;
+        height: 30rem;
+        
+    }
+    .sellImage img{
+        width: 80%;
+       height : 100%;
+        
+    }
+
+    .sell-name {
+        font-size:1.4rem;
+    }
+
+    .sell-price{
+        font-size:1.2rem
+    }
+
+    .sell-desc{
+        margin-top: 0rem;
+        padding: 0.5rem;
+    }
+
+    .btn-purchase{
+        margin-top: 2rem;
+    }
+
+    .backprint{
+        margin-left: 2rem;
+    }
+
+    .about-flex{
+        flex-direction: column;
+    }
+
+    .about-pic{
+        margin: 1rem;
+    }
+
+    .about-pic img{
+
+        width: 95%;
+        height : 80%;
+    }
+
+    /* .about-desc p{
+        font-weight: bold;
+    } */
+}
+
+
+
+@media screen and (max-width:531px)
+{
+    .worksbox{
+        grid-template-rows: repeat(13,16rem);
+    }
+
+    .work-name{
+        font-size:1rem;
+    }
+
+    .grid-Container{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(13,40rem);
+        padding : 2rem;
+        grid-gap: 6rem;
+    }
+
+    .main-text p{
+        padding: 2rem;
+    }
+
+    .move-box{
+        grid-gap: 10rem;
+    }
+
+    .sellImage {
+        width: 100%;
+        height: 20rem;
+        
+    }
+    .sellImage img{
+        width: 80%;
+       height : 100%;
+        
+    }
+
+    .sell-name {
+        font-size:1.4rem;
+    }
+
+    .sell-price{
+        font-size:1.2rem
+    }
+
+    .sell-desc{
+        margin-top: 0rem;
+      
+    }
+
+    .btn-purchase{
+        margin-top:1.5rem;
+    }
+
+    .backprint{
+        margin-left: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width:421px)
+{
+    .worksbox{
+        grid-template-rows: repeat(19,12rem);
+
+    }
+
+    .work-name{
+        font-size:0.8rem;
+    }
+
+    .grid-Container{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(13,30rem);
+        padding : 1.5rem;
+    }
+
+    .move-box{
+        grid-gap: 5rem;
+    }
+
+    .backprint{
+        margin-left: 1rem;
+    }
+}
+
