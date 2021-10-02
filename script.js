@@ -149,7 +149,7 @@ let workNameMode = [ {
     mode : "Water color on paper"
 },  {
     name : "Dark Forest",
-    mode : "Acrylic color on Canvas"
+    mode : "Acrylic paint on Canvas"
 },  {
     name : "Cloudy",
     mode : "Oil Paint on Canvas"
