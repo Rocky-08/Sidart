@@ -10,6 +10,14 @@ let _work = document.querySelector('.WORK');
 let _price = document.querySelector('.PRICE');
 let _about = document.querySelector('.ABOUT');
 let Contact = document.querySelector('.CONTACT');
+let logo = document.querySelector('.logo');
+
+
+// ------------------------------ reload website ----------------------------------
+
+logo.addEventListener('click',() => {
+    window.location.reload();
+})
 
 // --------------------------------------- Menu Hover --------------------------------------------
 
@@ -99,13 +107,13 @@ let workNameMode = [ {
     mode : "Graphite Pencil on Paper"
 },  {
     name : "Lord Krishna",
-    mode : "Oil Painting on Canvas"
+    mode : "Oil Paint on Canvas"
 },  {
     name : "Mr.Robert",
     mode : "Graphite and charcol Pencil"
 },  {
     name : "Queen of Atlantis",
-    mode : "Oil painting on Canvas"
+    mode : "Oil paint on Canvas"
 },  {
     name : "Alone",
     mode : "Water color on paper"
@@ -114,7 +122,7 @@ let workNameMode = [ {
     mode : "Water color on paper"
 },  {
     name : "Lord Narsingh Dev",
-    mode : "Water color and graphite Pencil on paper"
+    mode : " graphite Pencil on paper"
 },  {
     name : "Dragon",
     mode : "Glass painting on Glass"
@@ -147,7 +155,7 @@ let workNameMode = [ {
     mode : "Oil Paint on Canvas"
 },  {
     name : "Early 18th",
-    mode : "Glass painting on Glass"
+    mode : "Water Color on paper"
 },  {
     name : "Love",
     mode : "Acrylic Paint on Canvas"
@@ -201,10 +209,11 @@ let workNameMode = [ {
     mode : "graphite Pencil on paper"
 }]
 
-let workSize = [" 17cm * 27cm " , "42cm * 30cm" , " 17cm * 27cm " , " 30cm * 30cm " , "42cm * 30cm" , "42cm * 30cm" , "36inch * 30inch" , "42cm * 30cm" , " 15cm * 18cm " , "23inch * 33inch" , " 17cm * 27cm " , " 17cm * 27cm  " , "42cm * 30cm" , "17cm * 27cm " , "17cm * 27cm " , "42cm * 30cm " , "36cm * 30cm" , "42cm * 30cm" , "18inch * 24inch " , "30inch * 30inch" , "42cm * 30cm" , "44cm * 38cm" , "27cm * 20cm" , "42cm * 30cm " , " 17cm * 27cm" , " 42cm * 30 cm " , "42cm * 30cm" , " 15cm * 18cm " , "42cm * 30cm" , "42cm * 30cm" , "42cm * 30cm" , " 15cm * 18cm " , " 15cm * 18cm " , " 42cm * 30cm ", "42cm * 30cm" , "42cm * 30cm" , " 42cm * 30cm " , "42cm * 30cm"];
+let workSize = [" 17cm x 27cm " , "42cm x 30cm" , " 17cm x 27cm " , " 30cm x 30cm " , "42cm x 30cm" , "42cm x 30cm" , "36inch x 30inch" , "42cm x 30cm" , " 15cm x 18cm " , "23inch x 33inch" , " 17cm x 27cm " , " 17cm x 27cm  " , "42cm x 30cm" , "17cm x 27cm " , "17cm x 27cm " , "42cm x 30cm " , "36cm x 30cm" , "42cm x 30cm" , "18inch x 24inch " , "30inch x 30inch" , "42cm x 30cm" , "44cm x 38cm" , "27cm x 20cm" , "42cm x 30cm " , " 17cm x 27cm" , " 42cm x 30 cm " , "42cm x 30cm" , " 15cm x 18cm " , "42cm x 30cm" , "42cm x 30cm" , "42cm x 30cm" , " 15cm x 18cm " , " 15cm x 18cm " , " 42cm x 30cm ", "42cm x 30cm" , "42cm x 30cm" , " 42cm x 30cm " , "42cm x 30cm"];
+
+let printSize = [" 17cm x 27cm " , "42cm x 30cm" , " 17cm x 27cm "  , "42cm x 30cm" , "42cm x 30cm" , "36inch x 30inch" , "42cm x 30cm" , " 15cm x 18cm " , "23inch x 33inch" , " 17cm x 27cm " , " 17cm x 27cm " , "42cm x 30cm" , " 17cm x 27cm " , " 17cm x 27cm " , "36cm x 30cm" , "42cm x 30cm" , "18inch x 24inch " , "30inch x 30inch" , "42cm x 30cm" , "44cm x 38cm" , "27cm x 20cm"  , " 17cm x 27cm "  , "42cm x 30cm" , "42cm x 30cm" , "42cm x 30cm" , "42cm x 30cm" , "42cm x 30cm" , "42cm x 30cm" , "42cm x 30cm"];
 
 
-let printSize = [" 17cm * 27cm " , "42cm * 30cm" , " 17cm * 27cm "  , "42cm * 30cm" , "42cm * 30cm" , "36inch * 30inch" , "42cm * 30cm" , " 15cm * 18cm " , "23inch * 33inch" , " 17cm * 27cm " , " 17cm * 27cm " , "42cm * 30cm" , " 17cm * 27cm " , " 17cm * 27cm " , "36cm * 30cm" , "42cm * 30cm" , "18inch * 24inch " , "30inch * 30inch" , "42cm * 30cm" , "44cm * 38cm" , "27cm * 20cm"  , " 17cm * 27cm "  , "42cm * 30cm" , "42cm * 30cm" , "42cm * 30cm" , "42cm * 30cm" , "42cm * 30cm" , "42cm * 30cm" , "42cm * 30cm"];
 
 let workYear = [" 2016 " , "2014" , " 2016 " , " 2020 " , "2019" , "2016" , "2019 (Time Period: 1 Month)" , "2014" , " 2019 " , "2020 (Time Period : 1 Month)" , " 2016 " , " 2016 " , "2014" , " 2016 " , " 2019 " , " 2019 " , "2014" , "2016" , "2019 (Time Period : 15 Days) " , "2019 (Time Period : 1 Month)" , "2019 " , "2019 (Time Period : 1 Month)" , "2019 (Time Period : 1 Month)" , " 2019 " , " 2019 " , "2019 " , "2014" , " 2019 " , "2019" , "2019" , "2021" , " 2020 " , " 2020 " , "2019 ", "2017" , "2014" , " 2019 " , "2021"];
 
